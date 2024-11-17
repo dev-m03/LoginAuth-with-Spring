@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #52b788, #40916c);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section {
+  max-width: 400px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #40916c;
+  margin-bottom: 1.5rem;
+}
+
+.inputbox {
+  position: relative;
+  margin: 1.5rem 0;
+}
+
+.inputbox input {
+  width: 100%;
+  padding: 0.8rem;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #40916c;
+  font-size: 1rem;
+  outline: none;
+  color: #333;
+}
+
+.inputbox input:focus,
+.inputbox input:valid {
+  border-bottom: 2px solid #52b788;
+}
+
+.inputbox label {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #40916c;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -10px;
+  font-size: 0.9rem;
+  color: #52b788;
+}
+
+.inputbox ion-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #40916c;
+}
+
+button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #40916c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #52b788;
+}
+
+.register {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.register a {
+  color: #40916c;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.register a:hover {
+  color: #52b788;
+}
+
+.redText {
+  color: #e63946;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Shake animation */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+}
+
+.shake {
+  animation: shake 0.5s;
+}
