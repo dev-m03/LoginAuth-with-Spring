@@ -17,7 +17,7 @@ Clone my repo with git clone https://github.com/dev-m03/LoginAuth-with-Spring
 ### 2. Configure Database Connection  
 Edit src/main/resources/application.yml to set your PostgreSQL connection.  
 ## 3. Customize Frontend (Optional)  
-- Modify HTML files in src/main/resources/templates/ for login/signup UI changes.  
-- Update CSS and JS files in src/main/resources/static/ for custom styles and animations.  
+- Modify HTML files in src/main/resources/templates/ for login/signup UI changes.
+- - Update CSS and JS files in src/main/resources/static/ for custom styles and animations.  
 
 ## Now you are ready to go simply with my given auth code .
